@@ -1,0 +1,285 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dropshipping Academy - 30 Day Launch Plan</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+  body {
+    margin: 0;
+    background: #121212;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .container {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1DB954;
+    padding-bottom: 10px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    background: #1e1e1e;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.3s ease;
+  }
+
+  li.completed {
+    background: #2e2e2e;
+    color: #999;
+    text-decoration: line-through;
+  }
+
+  .task-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .task-text {
+    flex: 1;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .description {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #bbb;
+    line-height: 1.3;
+  }
+
+  button {
+    background: #1DB954;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    white-space: nowrap;
+  }
+
+  button:hover {
+    background: #17a647;
+  }
+
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #1DB954;
+  }
+
+  @media (max-width: 480px) {
+    li {
+      padding: 12px 16px;
+    }
+
+    .task-top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    button {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Dropshipping Academy - 30 Day Launch Plan</h1>
+  <ul id="task-list">
+    <!-- Tasks injected by JS -->
+  </ul>
+</div>
+
+<script>
+  const tasks = [
+    {
+      title: "Research profitable niches",
+      desc: "Look for market trends and products with high demand but low competition using tools like Google Trends or niche forums."
+    },
+    {
+      title: "Analyze competitors",
+      desc: "Identify your top competitors and study their pricing, marketing, and customer reviews."
+    },
+    {
+      title: "Choose your dropshipping products",
+      desc: "Select products that fit your niche, have good profit margins, and reliable supplier options."
+    },
+    {
+      title: "Find reliable suppliers",
+      desc: "Use platforms like AliExpress, SaleHoo, or Oberlo to find trustworthy suppliers with good ratings."
+    },
+    {
+      title: "Register your domain name",
+      desc: "Pick a memorable and relevant domain name that represents your brand and register it through services like GoDaddy."
+    },
+    {
+      title: "Set up your Shopify store",
+      desc: "Create an account on Shopify and start building your online store using their user-friendly tools."
+    },
+    {
+      title: "Design your store homepage",
+      desc: "Choose a clean theme, customize your layout, and make sure your homepage looks professional."
+    },
+    {
+      title: "Create product pages",
+      desc: "Add your products with high-quality images, detailed descriptions, and clear pricing."
+    },
+    {
+      title: "Write compelling product descriptions",
+      desc: "Explain benefits, features, and solve customer problems to boost conversions."
+    },
+    {
+      title: "Set prices and margins",
+      desc: "Calculate your costs and set prices that cover expenses and provide a healthy profit margin."
+    },
+    {
+      title: "Set up payment gateways",
+      desc: "Integrate payment methods like PayPal, Stripe, or Shopify Payments to accept customer payments."
+    },
+    {
+      title: "Configure shipping settings",
+      desc: "Set shipping zones, rates, and delivery times according to your supplier's capabilities."
+    },
+    {
+      title: "Set up legal pages (Privacy Policy, Terms)",
+      desc: "Create important pages to comply with laws and build customer trust."
+    },
+    {
+      title: "Install essential apps",
+      desc: "Add apps for email marketing, upselling, reviews, and customer support to enhance your store."
+    },
+    {
+      title: "Set up email marketing",
+      desc: "Create automated emails for welcome series, abandoned carts, and promotions."
+    },
+    {
+      title: "Create social media profiles",
+      desc: "Set up accounts on Facebook, Instagram, and TikTok to promote your brand."
+    },
+    {
+      title: "Plan your launch marketing strategy",
+      desc: "Outline your promotional tactics, budget, and timelines for a successful launch."
+    },
+    {
+      title: "Create Facebook Ads account",
+      desc: "Register and set up your Facebook Business Manager account for running ads."
+    },
+    {
+      title: "Design ad creatives",
+      desc: "Create eye-catching images or videos that showcase your products."
+    },
+    {
+      title: "Write ad copy",
+      desc: "Craft persuasive text that motivates people to click and buy."
+    },
+    {
+      title: "Launch Facebook ad campaigns",
+      desc: "Start your ads targeting your ideal audience and monitor performance."
+    },
+    {
+      title: "Set up Google Analytics",
+      desc: "Connect Google Analytics to track your website visitors and sales data."
+    },
+    {
+      title: "Optimize SEO for store",
+      desc: "Use keywords and meta tags to improve your store's visibility on search engines."
+    },
+    {
+      title: "Create blog content",
+      desc: "Write helpful articles related to your niche to attract organic traffic."
+    },
+    {
+      title: "Build your email list",
+      desc: "Collect emails via sign-up forms and offer incentives like discounts."
+    },
+    {
+      title: "Test your store checkout process",
+      desc: "Place test orders to ensure the buying process is smooth and error-free."
+    },
+    {
+      title: "Prepare customer support",
+      desc: "Set up FAQ pages, live chat, or email support to help your customers."
+    },
+    {
+      title: "Set up retargeting ads",
+      desc: "Create ads targeting visitors who didn't buy to encourage them to return."
+    },
+    {
+      title: "Analyze ad performance",
+      desc: "Review ad metrics regularly and adjust your campaigns for better results."
+    },
+    {
+      title: "Scale your ads and store growth",
+      desc: "Increase your ad budget and explore new marketing channels to grow your business."
+    }
+  ];
+
+  const taskList = document.getElementById('task-list');
+
+  function createTaskItem(task, index) {
+    const li = document.createElement('li');
+    li.setAttribute('data-index', index);
+
+    const topDiv = document.createElement('div');
+    topDiv.className = 'task-top';
+
+    const taskText = document.createElement('span');
+    taskText.className = 'task-text';
+    taskText.textContent = task.title;
+
+    const btn = document.createElement('button');
+    btn.textContent = 'Mark Complete';
+    btn.addEventListener('click', () => {
+      li.classList.toggle('completed');
+      btn.textContent = li.classList.contains('completed') ? 'Completed ✓' : 'Mark Complete';
+    });
+
+    topDiv.appendChild(taskText);
+    topDiv.appendChild(btn);
+
+    const desc = document.createElement('p');
+    desc.className = 'description';
+    desc.textContent = task.desc;
+
+    li.appendChild(topDiv);
+    li.appendChild(desc);
+
+    return li;
+  }
+
+  tasks.forEach((task, i) => {
+    taskList.appendChild(createTaskItem(task, i));
+  });
+</script>
+
+</body>
+</html>
